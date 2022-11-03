@@ -27,7 +27,7 @@ p{
 }
 
 /*Make all inputs have a 3px red border*/
-body{
+input [type=password][type=text] {
     border: 3px; 
     border-color: red;
 }
@@ -51,25 +51,26 @@ div p{
 
 
 /*Make only inputs with type 'text' have a gray background*/
-type.text {
+input[type=text] {
     background-color: gray;
 }
 
 /* Give both <p>'s inside the 3rd <div> a pink background*/
-div p :nth-of-type(3) {
+div:nth-of-type(3) p{
     background-color: pink;
 
 
 }
 
 /* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
-div p :nth-of-type(3){
+div:nth-of-type(3) p:last-of-type{
     border: 5px;
     border-color: white;
 }
 
 /* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
 div em{
+    color: white;
     font-size: 20px;
 }
 
@@ -94,11 +95,11 @@ label{
 }
 
 /*Make the <h1> element's color change to blue when hovered over */
-h1 :hover{
+h1:hover{
    background-color: blue;
 }
 
 /*Make the <a> element's that have been visited gray */
-a  :visited{
+a:visited{
     background-color: gray;
 }
