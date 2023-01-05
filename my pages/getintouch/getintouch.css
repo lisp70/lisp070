@@ -1,12 +1,60 @@
+.bk{
+animation: transition 1.2s;
+}
 
+.title {
+  animation: transitionIn 0.75s;
+}
+
+.form {
+  animation: transitionIn 1s;
+}
+
+.button {
+  animation: transitionIn 1.2s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity:0;
+    transform:translateY(-50px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  };
+}
+
+@keyframes transition {
+  from {
+    opacity:0;
+    transform:translateX(-50px)
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  };
+}
 @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@1&family=Figtree:wght@300;400;700&display=swap');
-
+.bk{
+  background:url("bfastrokelogo-bk.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html,body{
+  
+  height:100%;
+  background-color:#1c1c1c ;
+}
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #1c1c1c;
   }
 
   header{
