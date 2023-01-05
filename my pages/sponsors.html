@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+           <meta charset="utf-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Get in touch</title>
+            <link rel="stylesheet" type="text/css" href="sponsors.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arapey:ital@1&family=Figtree:wght@600&display=swap" rel="stylesheet">
+           <link rel="icon" href="icon.png"> 
+             
+   </head>
+
+   <body>
+      <header class="header" id="header">
+         <a href="#" class="logo">.</a>
+         <input class="side-menu" type="checkbox" id="side-menu" onclick="changeBackground()"/>
+         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+         <nav class="nav">
+             <ul class="menu">
+                 <li><a href="#">HOME</a></li>
+                 <li><a href="#">PROJECTS</a> </li>
+                 <!-- <li><a href="#">CLASS OF 23'</a> </li> -->
+                 <li><a href="#">SPONSORS</a> </li>
+                 <li><a href="#">CONTACT</a></li>
+             </ul>
+         </nav>
+     </header>
+      
+      <div class="title">
+         <h1 class="sponsors">Sponsors<span class="dot">.</span></h1>
+      </div>
+      <div class="row">
+          <div class="column">
+              <a href="https://www.um.edu.mt/"><img src="universita ta malta.png" class="uni" alt="Liam"style="width:100%"></a>
+              <a href="http://www.theoven.com.mt/"><img src="the oven.png" class="oven" alt="Liam"style="width:100%"></a>
+              <a href="http://www.theoven.com.mt/"><img src="creative studios.png" class="creativestudios" alt="Liam"style="width:100%"></a>
+          </div>
+
+          <div class="column">
+            <a href="https://www.facebook.com/maltarti/"> <img src="maltarti.png" class="maltarti" alt="Liam"style="width:100%"></a>
+            <a href="https://www.freehour.eu/"><img src="freehour.png" class="freehour" alt="Liam"style="width:100%"></a>
+            <a href="https://www.canon.com.mt/"><img src="canon.png" class="canon" alt="Liam"style="width:100%"></a>
+          </div>    
+
+          <div class="column">
+            <a href="https://www.icentre.com.mt/"><img src="icentre.png" class="icentre" alt="Liam"style="width:100%"></a>
+            <a href="https://www.um.edu.mt/newspoint"> <img src="newspoint.png" class="newspoint" alt="Liam"style="width:100%"></a>
+            <a href="https://brndwgn.com/"><img src="brnd wgn.png" class="brndwgn" alt="Liam"style="width:100%"></a>
+          </div>
+     </div>
+     
+      <script>
+         function changeBackground(){
+             var checkBox = document.getElementById("side-menu");
+             var header = document.getElementById("header");
+             var absolute = document.getElementsByClassName("BFA");
+             if (checkBox.checked == true){
+                 header.style.backgroundColor = "rgb(255, 229, 0)";
+                 changeOpacity0();
+             } else {
+                 header.style.backgroundColor = "rgb(28, 28, 28)";
+                 changeOpacity1();
+           }
+         }
+         
+         function changeOpacity0(){
+             var element1 = document.getElementById("BFA");
+             var element2 = document.getElementById("EXHI");
+             var element3 = document.getElementById("DATE");
+             var element4 = document.getElementById("DATE2");
+             element1.style.opacity = "0";
+             element2.style.opacity = "0";
+             element3.style.opacity = "0";
+             element4.style.opacity = "0";
+         }
+         
+         function changeOpacity1(){
+             var element1 = document.getElementById("BFA");
+             var element2 = document.getElementById("EXHI");
+             var element3 = document.getElementById("DATE");
+             var element4 = document.getElementById("DATE2");
+             element1.style.opacity = "1";
+             element2.style.opacity = "1";
+             element3.style.opacity = "1";
+             element4.style.opacity = "1";
+         }
+     </script>
+   </body>
+</html>
