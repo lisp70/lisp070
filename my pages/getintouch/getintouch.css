@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@1&family=Figtree:wght@300;400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+  }
+
+  header{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 30px 2.5%;
+  }
+  .strokelogo{
+    position: relative;
+    margin-right: auto;
+    width: auto;
+    height: 20px;
+  }
+  
+  .material-symbols-outlined {
+    color: #ffe500;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48,
+  }
+
+  .getin{
+    position: relative;
+   text-align:center;
+    margin: 22;
+    font-family: "Figtree",sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    top: 10%;
+    color: #FFFFFF;
+  }
+  
+  .touch{
+    display: inline-block;
+    position: relative;
+    text-align:center;
+    margin: 22;
+   font-family: "Arapey",serif;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 90px;
+    top: 10%;
+    color: #ffe500;
+  }
+   
+  /*30secondsofcode underline hover animation*/
+  .touch::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 8px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffe500;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .touch:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  /*reference-contact form by paper-form*/
+.form-group{
+  display: flexbox;
+  margin-top: 90px;
+  text-align: center;
+}
+
+input[type=text] {
+   width:15%;
+   padding: 12px 12px ;
+   line-height: 12px;
+   font-family: "Figtree",sans-serif;
+   font-weight: 400;
+   color: #1c1c1c;
+   font-size:18px;
+   background-color: #FFFFFF;
+   margin-top: 6px;
+   margin-bottom: 16px;
+}
+input[type=text]:hover{
+  transform: perspective(1px)translateZ(+0.02px);
+  transition:all ease 0.2s;
+}
+
+  input[type=email], select, textarea {
+    width: 30%;
+    padding: 12px 12px ;
+     line-height: 12px;
+    font-family: "Figtree",sans-serif;
+   font-weight: 400;
+   color: #1c1c1c;
+    font-size:18px;
+    background-color: #FFFFFF;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  input[type=email]:hover{
+    transform: perspective(1px)translateZ(+0.02px);
+    transition:all ease 0.2s;
+  }
+  textarea:hover{
+    transform: perspective(1px)translateZ(+0.02px);
+    transition:all ease 0.2s;
+  }
+  button{
+    align-items: center;
+    font-family: "Figtree",sans-serif;
+    font-weight: 700;
+    font-size:28px;
+    color: #1c1c1c;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffe500;
+    cursor:pointer;
+  }
+ button:hover {
+  color: #ffffff;
+  background-color: rgba(255,229,0, 0.9);
+  border: solid #ffe500;
+  transform: perspective(1px)translateZ(-0.2px);
+  transition:all ease 0.2s;
+ }

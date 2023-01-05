@@ -4,18 +4,11 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    {
-        "name": "Launch Chrome",
-        "request": "launch",
-        "type": "chrome",
-        "url": "http://degreeexhibition",
-        "webRoot": "${workspaceFolder}"
-    },
+
         {
             "type": "chrome",
-            "request": "launch",
-            "name": "Open indivhomepage.html",
-            "file": "c:\\Users\\aveng\\Desktop\\lisp070\\bootstrap\\indivhomepage\\indivhomepage.html"
+    
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }

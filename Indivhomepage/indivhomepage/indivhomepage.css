@@ -8,7 +8,7 @@
 }
 
 
-.exhibitiontitle{
+.exhibitiontitle a{
   position: absolute;
   margin: 22;
   font-family: "Righteous",sans-serif;
@@ -34,7 +34,7 @@
 li, a{
   font-family: "Righteous",sans-serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
   color:#ffffff;
   text-decoration: none;
 }
@@ -42,7 +42,7 @@ li, a{
 button{
   font-family: "Righteous",sans-serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18px;
   color: black;
   text-decoration: none;
 }
@@ -60,7 +60,7 @@ header{
   margin-right: auto;
  font-family: "Righteous",sans-serif;
  font-weight: 500;
- font-size: 22px;
+ font-size: 18px;
  text-decoration: none;
 }
 #BFADegreeExhibition a{
@@ -68,10 +68,10 @@ header{
 }
 #BFADegreeExhibition a:hover{
   color: rgba(255, 255, 255, 0.6);
-  font-size: 20px;
+  font-size: 16px;
   transition: all 0.3s ease 0.2s;
 }
-
+/*Referenced SkillThrive navbar flexbox tutorial*/
 .nav-links{
   list-style: none;
 }
@@ -91,6 +91,7 @@ header{
   display: inline-block;
   position: relative;
  }
+ /*30secondsofcode underline hover animation*/
 #exhibition a::after{
   content: '';
   position: absolute;
@@ -103,19 +104,21 @@ header{
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
+/*30secondsofcode underline hover animation*/
 #exhibition a:hover{
-  color: #ed1c24;
-  font-size: 20px;
+  font-size: 16px;
 }
 #exhibition a:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+  /*30secondsofcode underline hover animation*/
 
 #sponsors a{
     display: inline-block;
     position: relative;
    }
+   /*30secondsofcode underline hover animation*/
    #sponsors a::after{
     content: '';
     position: absolute;
@@ -128,18 +131,20 @@ header{
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
+  /*30secondsofcode underline hover animation*/
 #sponsors a:hover{
-  color: #1f29ea;
-  font-size: 20px;
+  font-size: 16px;
 }
 #sponsors a:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+  /*30secondsofcode underline hover animation*/
 #contact a{
   display: inline-block;
   position: relative;
  }
+ /*30secondsofcode underline hover animation*/
 #contact a::after{
   content: '';
   position: absolute;
@@ -152,14 +157,15 @@ header{
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
+/*30secondsofcode underline hover animation*/
 #contact a:hover{
-  color: #f7941d;
-  font-size: 20px;
+  font-size: 16px;
 }
 #contact a:hover::after{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+/*30secondsofcode underline hover animation*/
 button {
   padding:9px 25px;
   background-color: rgba(255, 255, 255,0.907);
@@ -181,9 +187,38 @@ button:hover {
 background: #ffffff;
   border-radius: 50%;
 }
-
+.exhibitiontitle a{
+  position: absolute;
+  margin: 22;
+  font-family: "Righteous",sans-serif;
+  font-weight: 500;
+  font-size: 170px;
+  top: 75%;
+  color: aliceblue;
+}
 .exhibitiontitle a:hover{
-  color: none;
-  stroke: #ed1c24;
-
+  color: #ed1c24;
+  font-size: 184px;
+  transition: all 0.3s ease-in 0.2s;
+}
+.exhibitiontitle a::before{
+  content: '';
+  position: absolute;
+  background-color: #ed1c24;
+  width: 0;
+  height: 100%;
+  transition: width 2s linear;
+  display: inline-block;
+}
+.degreetitle{
+    position: absolute;
+      font-family: "Righteous",sans-serif;
+      font-weight: 500;
+      font-size:100px;
+      color: aliceblue;
+      top: 52%;
+      left: -7.38%;
+      /*writing-mode: sideways-lr;
+      text-orientation: sideways;*/
+      transform: rotate(-90deg);
 }
