@@ -8,84 +8,106 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
            <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Arapey:ital@1&family=Figtree:wght@600&display=swap" rel="stylesheet">
-           <link rel="icon" href="icon.png"> 
-             
+           <script src="script.js" defer></script>  
    </head>
 
    <body>
       <header class="header" id="header">
-         <a href="#" class="logo">.</a>
-         <input class="side-menu" type="checkbox" id="side-menu" onclick="changeBackground()"/>
-         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-         <nav class="nav">
-             <ul class="menu">
-                 <li><a href="#">HOME</a></li>
-                 <li><a href="#">PROJECTS</a> </li>
-                 <!-- <li><a href="#">CLASS OF 23'</a> </li> -->
-                 <li><a href="#">SPONSORS</a> </li>
-                 <li><a href="#">CONTACT</a></li>
-             </ul>
-         </nav>
-     </header>
-      
+        <a href="#" class="logo" id="logo">.</a>
+        <input class="side-menu" type="checkbox" id="side-menu" onclick="changeBackground()"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line" ></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROJECTS</a> </li>
+                <!-- <li><a href="#">CLASS OF 23'</a> </li> -->
+                <li><a href="#">SPONSORS</a> </li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="section">
       <div class="title">
          <h1 class="sponsors">Sponsors<span class="dot">.</span></h1>
       </div>
       <div class="row">
           <div class="column">
-              <a href="https://www.um.edu.mt/"><img src="universita ta malta.png" class="uni" alt="Liam"style="width:100%"></a>
-              <a href="http://www.theoven.com.mt/"><img src="the oven.png" class="oven" alt="Liam"style="width:100%"></a>
-              <a href="http://www.theoven.com.mt/"><img src="creative studios.png" class="creativestudios" alt="Liam"style="width:100%"></a>
-          </div>
+                  <div class="university__group">
+                      <img class="university__img" src="university1c1c1c.png" alt="Liam"style="width:100%">
+                     <div class="university__overlay">
+                         <div class="university__title"><a href="https://www.um.edu.mt/">University of Malta</a></div>
+                     </div>
+                 </div>
+                 
+                 <div class="oven__group">
+                      <img src="the oven.png" class="oven" alt="Liam"style="width:100%">
+                       <div class="oven__overlay">
+                          <div class="oven__title"><a href="http://www.theoven.com.mt/">The Oven</a></div>
+                     </div>
+                 </div>
+
+                 <div class="creativestudios__group">
+              <img src="creative studios.png" class="creativestudios" alt="Liam"style="width:100%">
+                     <div class="creativestudios__overlay">
+                          <div class="creativestudios__title">Creative Studios</div>
+                     </div>
+                 </div>
+            
+            </div>
 
           <div class="column">
-            <a href="https://www.facebook.com/maltarti/"> <img src="maltarti.png" class="maltarti" alt="Liam"style="width:100%"></a>
-            <a href="https://www.freehour.eu/"><img src="freehour.png" class="freehour" alt="Liam"style="width:100%"></a>
-            <a href="https://www.canon.com.mt/"><img src="canon.png" class="canon" alt="Liam"style="width:100%"></a>
+                  <div class="maltarti__group">
+                        <img src="maltarti.png" class="maltarti" alt="Liam"style="width:100%">
+                        <div class="maltarti__overlay">
+                           <div class="maltarti__title"><a href="https://www.facebook.com/maltarti/">Maltarti</a></div>
+                      </div>
+                 </div>
+
+                  <div class="freehour__group">
+                       <img src="freehour.png" class="freehour" alt="Liam"style="width:100%">
+                        <div class="freehour__overlay">
+                          <div class="freehour__title"><a href="https://www.freehour.eu/">FreeHour</a></div>
+                      </div>
+                 </div>
+
+                 <div class="canon__group">
+                       <img src="canon.png" class="canon" alt="Liam"style="width:100%">
+                        <div class="canon__overlay">
+                            <div class="canon__title"><a href="https://www.canon.com.mt/">Canon</a></div>
+                       </div>
+                 </div>
+
           </div>    
 
           <div class="column">
-            <a href="https://www.icentre.com.mt/"><img src="icentre.png" class="icentre" alt="Liam"style="width:100%"></a>
-            <a href="https://www.um.edu.mt/newspoint"> <img src="newspoint.png" class="newspoint" alt="Liam"style="width:100%"></a>
-            <a href="https://brndwgn.com/"><img src="brnd wgn.png" class="brndwgn" alt="Liam"style="width:100%"></a>
-          </div>
+                 <div class="icentre__group">
+                       <img src="icentre 1c1c1c.png" class="icentre" alt="Liam"style="width:100%">
+                       <div class="icentre__overlay">
+                           <div class="icentre__title"><a href="https://www.icentre.com.mt/">iCentre</a></div>
+                     </div>
+                </div>
+                 <div class="newspoint__group">
+                       <img src="newspoint.png" class="newspoint" alt="Liam"style="width:100%"></a>
+                       <div class="newspoint__overlay">
+                            <div class="newspoint__title"><a href="https://www.um.edu.mt/newspoint">Newspoint</a></div>
+                       </div>
+                </div>
+
+                <div class="brndwgn__group">
+                       <img src="brnd wgn.png" class="brndwgn" alt="Liam"style="width:100%">
+                      <div class="brndwgn__overlay">
+                            <div class="brndwgn__title"><a href="https://brndwgn.com/">BRND WGN</a></div>
+                       </div>
+                </div>
+          
+            </div>
      </div>
-     
+    </div>
       <script>
-         function changeBackground(){
-             var checkBox = document.getElementById("side-menu");
-             var header = document.getElementById("header");
-             var absolute = document.getElementsByClassName("BFA");
-             if (checkBox.checked == true){
-                 header.style.backgroundColor = "rgb(255, 229, 0)";
-                 changeOpacity0();
-             } else {
-                 header.style.backgroundColor = "rgb(28, 28, 28)";
-                 changeOpacity1();
-           }
-         }
-         
-         function changeOpacity0(){
-             var element1 = document.getElementById("BFA");
-             var element2 = document.getElementById("EXHI");
-             var element3 = document.getElementById("DATE");
-             var element4 = document.getElementById("DATE2");
-             element1.style.opacity = "0";
-             element2.style.opacity = "0";
-             element3.style.opacity = "0";
-             element4.style.opacity = "0";
-         }
-         
-         function changeOpacity1(){
-             var element1 = document.getElementById("BFA");
-             var element2 = document.getElementById("EXHI");
-             var element3 = document.getElementById("DATE");
-             var element4 = document.getElementById("DATE2");
-             element1.style.opacity = "1";
-             element2.style.opacity = "1";
-             element3.style.opacity = "1";
-             element4.style.opacity = "1";
-         }
-     </script>
+        function changeBackground(){
+            var header = document.getElementById("header");
+            header.classList.toggle("switch-color");
+        }
+    </script>
    </body>
 </html>
